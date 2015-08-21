@@ -1,0 +1,105 @@
+
+@font-face {
+    font-family: navFont;
+    src: url(../fonts/proximanova-semibold-webfont.woff);
+}
+
+
+body {
+  font-family: navFont, sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header {
+  background-color: #4e535b;
+}
+
+.attached-image {
+  margin-right: .75em;
+}
+.check-image {
+  width: 10px;
+}
+
+.navLeft,
+.navRight {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+.arrow-box {
+  position: absolute;
+  left: 800px;
+  top: 75px;
+  background: #26292D;
+  width: 280px;
+  height: 225px;
+  border-radius: 5px;
+  visibility: hidden;
+}
+
+.arrow-box:after {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-bottom-color: #26292D;
+  border-width: 8px;
+  margin-left: 70px;
+}
+
+.drop-box {
+  color: white;
+  font-size: .8em;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.drop-box ul {
+  margin: 0;
+}
+.drop-box li {
+  margin: 20px 20px;
+  width: 230px;
+  padding-top: 20px;
+  border-top: 1px solid #4e535b;
+}
+
+.drop-box li:first-child {
+  border: none;
+  padding-top: 0;
+  color: #7D7D80;
+  width: 240px;
+}
+
+.drop-box a {
+  text-align: left;
+  padding-left: 20px;
+}
+
+li .selected {
+  color: #3A92CE;
+  padding-left: 0;
+  margin-left: 0;
+}

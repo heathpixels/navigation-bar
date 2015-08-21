@@ -1,0 +1,100 @@
+/******************************
+MAIN STYLES
+******************************/
+.main-header, 
+.nav,
+.navLeft,
+.navRight,
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header {
+  padding: 2em 0;
+}
+
+.site-logo {
+  width: 110px;
+  align-self: center;
+  padding-right: 100px;
+}
+
+.navLeft {
+  margin-top: 1.5em;
+}
+
+.nav a, p {
+  display: block;
+  color: #fbfbfb;
+  text-align: center;
+  padding: .3em;
+}
+
+.nav img {
+  width: 1.3em;
+}
+
+
+/******************************
+MEDIA QUERIES
+******************************/
+    
+@media (min-width: 769px) {
+ .main-header {
+    height: 250px;
+  }
+   .site-logo {
+    padding-right: 0;
+  }
+  .site-logo img {
+    width: 100px;
+  }
+  .container {
+    margin-top: 1.5em;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .navLeft,
+  .navRight {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .navLeft {
+    margin-top: 0;
+  }
+  .nav a {
+    margin-right: 2em;
+  }
+}
+
+ 
+@media (min-width: 1025px) {
+  .main-header {
+    flex-direction: row;
+    height: 50px;
+   justify-content: space-between;
+   padding: 15px 0;
+   align-self: center;
+  }
+  .site-logo {
+    padding-left: 30px;
+    padding-right: 0px;
+    align-self: center;
+  }
+  .site-logo img {
+    width: 75px;
+  }
+  .nav {
+    padding: 0;
+  }
+  .nav li {
+    margin-left: .3em;
+    margin-right: .3em;
+    align-self: center;
+  }
+  .container {
+    margin-top: 0;
+    align-self: center;
+  }
+}
