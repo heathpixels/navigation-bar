@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: navFont;
     src: url(../fonts/proximanova-semibold-webfont.woff);
@@ -100,6 +99,13 @@ a {
 
 li .selected {
   color: #3A92CE;
-  padding-left: 0;
-  margin-left: 0;
+  padding-left: 20px;
+
+  display: inline-block;
+  content: "";
+  background: url("../images/check.png") no-repeat 0 0;
+  background-size: 10px;
+
 }
+
+

@@ -1,4 +1,3 @@
-
 //Show dialog on hover
 $(document).ready(function(){
     $(".objct").hover(function(){
@@ -9,10 +8,23 @@ $(document).ready(function(){
 	    $(".arrow-box").css("visibility", "hidden");
 	});
 //Change objective onclick
-//	$( ".obj-drop" ).click(function() {
-//	  $(this).html("visibility", "hidden");
-//	});
-//change header 
-//move check mark
 //change selected class
+//move check mark
+//
+
+	$( ".obj-drop" ).click(function() {
+		var clickedObjct = this;
+
+		$( ".obj-drop" ).removeClass( "selected" );
+
+  		if(clickedObjct) {
+  			$( clickedObjct ).addClass( "selected" );
+  			$(".objct").text($(clickedObjct).text());
+  		
+  		}
+	});
+
+//change header 
+
+
 });
