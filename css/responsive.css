@@ -35,7 +35,6 @@ MAIN STYLES
   width: 1.3em;
 }
 
-
 /******************************
 MEDIA QUERIES
 ******************************/
@@ -65,6 +64,11 @@ MEDIA QUERIES
   }
   .nav a {
     margin-right: 2em;
+  }
+  .noti-bubble {
+    display: inline;
+    top: -8px;
+    left: 12px;
   }
 }
 

@@ -48,7 +48,7 @@ a {
   width: 280px;
   height: 225px;
   border-radius: 5px;
-  visibility: hidden;
+  display:none;
 }
 
 .arrow-box:after {
@@ -83,6 +83,7 @@ a {
   width: 230px;
   padding-top: 20px;
   border-top: 1px solid #4e535b;
+  outline:none;
 }
 
 .drop-box li:first-child {
@@ -108,4 +109,23 @@ li .selected {
 
 }
 
+.bell-img {
+  position: relative;
+}
+
+.noti-bubble {
+    display: none;
+    position: absolute;
+    width: 1.2em;
+    height: 1.2em;
+    padding: 1px;
+    text-align:center;
+    font-size: .9em;
+    color:#fff;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    background-color: #3A92CE;
+    border: solid 2px #4e535b;
+  }
 
