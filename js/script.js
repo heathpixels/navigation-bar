@@ -18,7 +18,6 @@
           $(".arrow-box").fadeOut();
       }
       
-
 //Change onclick objective, selected class, check mark, header
 
 	$( ".obj-drop" ).click(function() {
@@ -32,5 +31,4 @@
   		
   		}
 	});
-
 });
