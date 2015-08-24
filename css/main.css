@@ -114,7 +114,6 @@ li .selected {
 }
 
 .noti-bubble {
-    display: none;
     position: absolute;
     width: 1.2em;
     height: 1.2em;
